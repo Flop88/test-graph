@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">test-task</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello Main fragment</string>
+    <string name="hello_blank_fragment2">Hello Graph fragment</string>
+    <string name="points_count_edit_text">Количество точек</string>
+    <string name="points_count_title_text_view">Введите количество точек для запроса</string>
+    <string name="go_text_button">Поехали</string>
+    <string name="y">Y</string>
+    <string name="x">X</string>
+</resources>

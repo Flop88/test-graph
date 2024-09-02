@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.mvlikhachev.test_task.presentation.screen.main.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+
+        <action
+            android:id="@+id/action_mainFragment_to_graphFragment"
+            app:destination="@id/graphFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/graphFragment"
+        android:name="com.mvlikhachev.test_task.presentation.screen.graph.GraphFragment"
+        android:label="fragment_graph"
+        tools:layout="@layout/fragment_graph">
+
+    <argument
+        android:name="points"
+        app:argType="com.mvlikhachev.test_task.domain.model.Point[]" />
+
+        </fragment>
+</navigation>
